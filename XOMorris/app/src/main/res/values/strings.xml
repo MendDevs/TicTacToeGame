@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">XO Morris</string>
+    <string name="your_turn">Your Turn</string>
+    <string name="x_score">X Score</string>
+    <string name="your_turn2">Your Turn</string>
+    <string name="o_score">O Score</string>
+</resources>

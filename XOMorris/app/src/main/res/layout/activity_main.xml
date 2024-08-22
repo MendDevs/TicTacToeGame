@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <!-- Row 1 -->
+
+    <Button
+        android:id="@+id/BO"
+        android:layout_width="107dp"
+        android:layout_height="95dp"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="20dp"
+        android:text=""
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/B3"
+        app:layout_constraintEnd_toStartOf="@+id/player1turn"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/BO"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/B2"
+        app:layout_constraintBottom_toTopOf="@+id/B4"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/B5"
+        android:layout_margin="4dp"/>
+
+    <!-- Row 2 -->
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BO"
+        app:layout_constraintEnd_toStartOf="@+id/B4"
+        app:layout_constraintBottom_toTopOf="@+id/B6"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/B3"
+        app:layout_constraintTop_toBottomOf="@+id/B1"
+        app:layout_constraintEnd_toStartOf="@+id/B5"
+        app:layout_constraintBottom_toTopOf="@+id/B7"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/B5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/B4"
+        app:layout_constraintTop_toBottomOf="@+id/B2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/B8"
+        android:layout_margin="4dp"/>
+
+    <!-- Row 3 -->
+    <Button
+        android:id="@+id/B6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B3"
+        app:layout_constraintEnd_toStartOf="@+id/B7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/B7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/B6"
+        app:layout_constraintTop_toBottomOf="@+id/B4"
+        app:layout_constraintEnd_toStartOf="@+id/B8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/B8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/B7"
+        app:layout_constraintTop_toBottomOf="@+id/B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="4dp"/>
+
+    <!-- Player turn and score TextViews -->
+    <TextView
+        android:id="@+id/player2turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_turn"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <TextView
+        android:id="@+id/player2score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_score"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/player1turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:text="@string/your_turn2"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/player1score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:text="@string/o_score"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
